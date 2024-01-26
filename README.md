@@ -5,7 +5,7 @@ The OPC-UA hardrive monitor is used to monitor harddrive states on remote machin
 - settings.yaml
 - opcua-drive-monitor.service
 
-## Install requirements
+## Install Requirements
 ### Modules
 - asynua
 ```
