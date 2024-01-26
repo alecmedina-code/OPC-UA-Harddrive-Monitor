@@ -1,0 +1,15 @@
+[Unit]
+Description = OPCUA Drive Monitoring
+After = network.target
+
+[Service]
+Type = simple
+ExecStart = /usr/lib/opcua/monitoring/drives/drive-monitoring.py
+User = automation
+Restart = always
+SyslogIdentifier = opcua-drive-monitor
+RestartSec = 5
+TimeoutStartSec = infinity
+
+[Install]
+WantedBy=default.target
